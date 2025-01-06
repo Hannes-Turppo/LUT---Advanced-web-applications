@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to move my lazy ass</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>ToDo APP</h1>
+
+    <!-- add todos to server -->
+    <div class="todoFormDiv">
+        <form action="/add" method="post" id="todoForm">
+            <input type="text" id="userInput" name="userName" placeholder="What's your name">
+            <input type="text" id="todoInput" name="todoInput" placeholder="What to do...">
+            <button type="button" id="submit-data">submit</button>
+        </form>
+        <p id="response"></p>
+    </div>
+
+    <!-- search for user's todos -->
+    <div id="searchFormContainer">
+        <form id="searchForm" action="/todos" method="get">
+            <input id="searchInput" type="text" placeholder="Whose todos do you want to see?">
+            <input id="search" type="button" value="Search ToDos">
+            <input id="deleteUser" type="button" value="Delete User">           
+        </form>
+    </div>
+
+    <!-- display todos -->
+    <div id="todoContainer" class="todoContainer">
+
+    </div>
+</body>
+</html>
