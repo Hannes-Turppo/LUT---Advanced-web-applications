@@ -1,0 +1,26 @@
+meta {
+  name: createTopic
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://127.0.0.1:3000/api/topics
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Nzg1NzhkY2MyZDQwOTE2NjUxMWU5ZjIiLCJ1c2VybmFtZSI6InRlc3RNYW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MzY4MDA0OTgsImV4cCI6MTczNjgwNzY5OH0.P2-wHCyPl4PVQieH3CsaByxAzhmZCtANL39IqXmHP1I
+}
+
+body:json {
+  {
+    "title": "testing",
+    "content": "testingTesting Testing..."
+  }
+}
