@@ -1,0 +1,23 @@
+meta {
+  name: post-book
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://127.0.0.1:1234/api/book
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "author": "myself",
+    "name": "Trust me bruh",
+    "pages": "69420"
+  }
+}
